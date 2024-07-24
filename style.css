@@ -5,3 +5,225 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
+main > section{
+    margin-top: 130px;
+}
+.Nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Nav-Title{
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+.Nav-links{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    font-weight: 500;
+}
+.Nav-item{
+    list-style: none;
+
+}
+.Display-flex{
+    display: flex;
+}
+.Primary-Bg{
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.Nav-bar,.Bannar,.main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.Bannar-Title{
+    color: rgb(19, 19, 19);
+    font-size: 64px;
+    font-weight: 700;
+}
+.Bannar-Description{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+}
+.ban-Btn{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgb(255, 144, 14);
+    width: 180px;
+    height: 64px;
+    border: none;
+}
+.btn-deco{
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+.Bannar-Content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Bannar-Image{
+    width: 100%;
+}
+
+.image-Cointainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.Section-Title{
+    font-weight: 700;
+    Font-size: 45px;
+}
+.Image-Description{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+#Quick-list{
+    color: rgb(114, 114, 114);
+}
+#of-Our{
+    color: rgb(19, 19, 19);
+}
+#Feature{
+    color: rgb(255, 144, 14);
+}
+.image-Feture{
+    margin-left: 130px;
+    max-width: 530px;
+}
+.teams{
+    align-items: center;
+}
+
+.sm-fct-des{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 542px;
+}
+
+.fct-name{
+    color: rgb(114, 114, 114);
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.fct-crd-value{
+    color: rgb(66, 66, 66);
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.fact-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.fact-icon{
+    /* margin-top: 45px; */
+}
+.fact-card{
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width: 242px;
+    height: 242px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-title{
+    color: rgb(19, 19, 19);
+    font-size: 45px;
+    font-weight: 700;
+}
+.sponsor-description{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+}
+.sponsor-img{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-img img{
+    filter: grayscale(100%);
+}
+
+.footer{
+    max-width: 1440px;
+    max-height: 100px;
+    background-color: rgb(255, 244, 231);
+    border-radius: 8px;
+    margin: 130px auto;
+}
+.footer-description{
+    color: rgb(66, 66, 66);
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    padding-left: 410px;
+    padding-right: 410px;
+}
+
+
+
+@media screen and ( max-width: 576px) {
+    .Nav-bar,
+    .Nav-links,
+    .teams{
+        flex-direction: column;
+    }
+    .image-Cointainer,
+    .fact-container,
+    .sponsor-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .image-Feture{
+        margin-left: 20px;
+    }
+    .fact-container,
+    .sponsor-info{
+        justify-items: center;
+    }
+    .sponsor-img{
+        gap: 50px;
+        justify-items: center;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams,
+    .image-Feture{
+        flex-direction: column;
+    }
+    .our-features{
+        margin: 50px auto;
+    }
+    .fact-container,
+    .sponsor-img{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+}
